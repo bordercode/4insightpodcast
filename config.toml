@@ -1,0 +1,129 @@
+baseurl = "https://joseluismanzanaresrivera.netlify.com/"
+languageCode = "en-us"
+title = "Border Research"
+theme = "castanet"
+googleAnalytics = ""
+disqusShortname = ""
+paginate = "9"
+
+
+[permalinks]
+	# page = "/:filename/"
+	about = "/:filename/"
+	episode = "/:filename/"
+
+
+# The theme supports menus with up to one submenu per menu item
+# The menu name must be "Main"
+# The menus are sorted based upon their identifier
+[[Menu.Main]]
+    name = "Semblanza"
+    identifier = "Semblanza"
+    url = "Semblanza"
+
+[[Menu.Main]]
+    name = "Contact"
+    identifier = "contact"
+    url = "contact"
+
+[[Menu.Main]]
+    name = "Hosts"
+    identifier = "hosts"
+    url = "host"
+
+[[Menu.Main]]
+    name = "Guests"
+    identifier = "guests"
+    url = "guest"
+
+[[Menu.Main]]
+    name = "Investigación"
+    identifier = "investigación"
+    url = "#!"
+
+[[Menu.Main]]
+    name = "Books"
+    identifier = "books"
+    url = "books"
+    parent = "investigación"
+[[Menu.Main]]
+    name = "Podcasts"
+    identifier = "podcasts"
+    url = "books"
+    parent = "investigación"
+
+[params]
+site_theme = "orange"
+# site_layout = "grid"
+site_layout = "grid"
+enable_jumbo = "true"
+# enable_jumbo = "false"
+# truncate = "100"
+# about_logo = "/img/hugocast.png"
+copyright_notice = "Copyright 2019 [José Luis Manzanares Rivera](https://4insight-jl.netlify.com/)"
+itunes_subscribe = "http://itunes.apple.com/us/podcast/arrested-devops/id773888088?mt=2&uo=4&at=11lsCi"
+android_subscribe = "http://subscribeonandroid.com/feeds.podtrac.com/VGAulpN7MY1U"
+google_play_subscribe = "https://goo.gl/app/playmusic?ibi=com.google.PlayMusic&isi=691797987&ius=googleplaymusic&link=https://play.google.com/music/m/Ihj4yege3lfmp3vs5yoopgxijpi?t%3DArrested_DevOps"
+stitcher_subscribe = "http://www.stitcher.com/podcast/arrested-devops-2/arrested-devops"
+soundcloud_subscribe = "http://feeds.soundcloud.com/users/soundcloud:users:203144248/sounds.rss"
+pocketcasts_subscribe = "http://pcasts.in/feed/feeds.soundcloud.com/users/soundcloud:users:203144248/sounds.rss"
+mailchimp_subscribe = "//arresteddevops.us3.list-manage.com/subscribe/post?u=5e4cbcac996bb9df25f970a89&amp;id=154fa76bcc"
+#rss_subscribe = "http://feed.com/myfeed" #only set this if you don't want to use the built-in feed
+description = "Generando investigación aplicada mediante el análisis de datos."
+media_prefix = "https://media.blubrry.com/arresteddevops/content.blubrry.com/arresteddevops/"
+  [params.feed]
+    copyright = "Copyright 2019 José Luis Manzanares Rivera" #do not use markdown in this field; it is used in the feed
+    itunes_subtitle = "The best podcast ever" #no markdown or HTML
+    itunes_author = "Matt Stratton" #no markdown or HTML
+    itunes_summary = "Generando investigación aplicada mediante el análisis de datos." # Limited to 4000 characters or less, plain text, no HTML
+    itunes_owner_name = "Matt Stratton"
+    itunes_owner_email = "matt.stratton@gmail.com" #contains the e-mail address that will be used to contact the owner of the Podcast for communication specifically about their Podcast on iTunes. It will not be publicly displayed on iTunes.
+    itunes_image = "https://www.arresteddevops.com/img/ado-podcast-logo.png" #fqdn to the image art for your podcast
+    itunes_top_category = "Technology"
+    itunes_first_sub_category = "Software How-To"
+    itunes_second_sub_category = "Tech News"
+    language = "en-us"
+
+  [params.social]
+    github = "JoseLuisManzanaresRivera"
+    facebook_admin = [""] # This needs to be one or more page admins to get domain insights
+    twitter = "JLManzanaresR"
+    
+  [params.authors]
+    [params.authors.Matt]
+      name	= "José Luis Manzanares Rivera"
+      thumbnail = "img/host/face.jpg"
+      bio = "[José Luis Manzanares Rivera](https://www.colef.mx/posgrado/profesores/borrador-automatico-31/) es un investigador mexicano especializado en el análisis de datos. Es doctor en ciencias económicas por la  Universidad Autónoma de Baja California y colabora en El Colegio de la Frontera Norte como investigador titular en el Departamento de Estudios Urbanos y del Medio Ambiente. Ha realizado trabajo de investigación en diversos paises entre ellos Chile y Australia. Desde 2012 es miembro del Sistema Nacional de Investigadores del Consejo Nacional de Ciencia y Tecnología y es autor de más de 20 publicaciones científicas, entre ellas 18 artículos académicos en revistas especializadas en países como Argentina, Colombia, Costa Rica y Estados Unidos.[Redalyc](http://www.redalyc.org/autor.oa?id=20835) [ORCID](http://orcid.org/0000-0003-3394-4967) Sus areas de interés incluyen: Modelación Estadística. Manejo de datos replicable en R"
+
+      [params.authors.Matt.social]
+        github = "mattstratton"
+        facebook = "matt.stratton"
+        twitter = "mattstratton"
+        linkedin = "mattstratton"
+        homepage = "https://www.mattstratton.io"
+        pinterest = "mattstratton"
+        instagram = "instagram"
+        youtube = "mattstratton"
+    [params.authors.Trevor]
+			name = "Trevor Hess"
+			thumbnail = "https://www.arresteddevops.com/img/trevor.png"
+			bio = ""
+				[params.authors.Trevor.social]
+					twitter = "trevorghess"
+    [params.authors.Bridget]
+      name = "José Luis Manzanares Rivera"
+      thumbnail = "https://res.cloudinary.com/joseluismanzanaresrivera/image/upload/v1538281172/Jose%20Luis%20/aavatar.jpg"
+      bio = ""
+      [params.authors.Bridget.social]
+        twitter = "bridgetkromhout"
+
+    [params.links]
+      [params.links.ado]
+        name = "Arrested DevOps"
+        url = "https://www.arresteddevops.com"
+      [params.links.ffs]
+        name = "Food Fight Show"
+        url = "https://foodfightshow.org"
+      [params.links.sdt]
+        name = "Software Defined Talk"
+        url = "https://cote.io/podcasts/sdt/"
